@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="page">
+        <div class="header"><h1>Virtual Library</h1></div>
+        <div class="menu">
+            <div class="menu-items">
+                <button class="item1">Home</button>
+                <button class="item2">About</button>
+                <button class="item3">Odin</button>
+                <button type="reset" form="form">Reset form</button>
+                <button class="item5"><link rel="stylesheet" href="index.html">Refresh</button>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="form" >
+                <form method="GET" action="/" id="form">
+                    <label for="bookName">Title:</label>
+                    <input type="text" name="bookName" id="bookName">
+                    <label for="author">Author:</label>
+                    <input type="text" name="author" id="author">
+                    <label for="yearPublished">Published:</label>
+                    <input id='year' type="number" min="1500" max="2024" value="2000" step="1">
+                </form>
+                <button type="submit" id="submit" form="form">Add book</button>
+            </div>
+            <div class="cards">
+                <div class="card titles">
+                    <p>Title</p>
+                    <p>Author</p>
+                    <p>Year</p>
+                    <p>Read status</p>
+                    <p>Remove</p>
+                </div>
+                   
+            </div>
+        </div>
+        <div class="footer"><h1>footer</h1></div>
+    </div>
+    
+</body>
+</html>

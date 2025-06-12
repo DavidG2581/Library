@@ -1,0 +1,90 @@
+body {
+    background-image: url("./images/reddit_shenandoah_pintopoint.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    display: grid;
+    text-align: center;
+    /* min-width: 500px;
+    max-width: 80%; */
+    width: clamp(600px, 80%, 1250px);
+    grid-template-columns: 1;
+    /* grid-template-rows: repeat(8, minmax(100px, 1fr)); */
+    grid-template-rows: 100px 100px 400px 100px;
+    margin: 0 10%;
+    background: rgb(255, 0, 0,.2);
+}
+
+.header, .main-content, .menu, .footer {
+    min-height: 50px;
+    border: 2px solid;
+}
+
+.menu-items {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-items button {
+    height: 50px;
+    width: 100px;
+}
+
+.menu-items button:hover {
+    background-color: yellow;
+    size-adjust: 10%;
+}
+
+.item5 {
+    margin-left: auto;
+}
+
+form {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+input {
+    width: 20%;
+}
+
+.main-content {
+    display: grid;
+    grid-template-rows: 100px 300px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.titles {
+    font-weight: bolder;
+    font-size: large;
+}
+
+p:not(.titles) {
+    color:wheat;
+}
+
+
