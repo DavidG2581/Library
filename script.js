@@ -60,6 +60,12 @@ function addBookToLibrary(book) {
 // submit.addEventListener('click',addBookToLibrary(e));
 // Do no include parenthesis after function name or it will automatically run
 form.addEventListener('submit', addBookToLibrary);
+//^ commented out above and did below per reddit help
+// for some reason I need both of these for it to work properly. Look into it.
+form.addEventListener('submit', function (event) {
+    event.preventDefault(); // <——-
+    addBookToLibrary;
+  });
 
 myLibrary.forEach((bookItem)=>{
   console.log("display book test",bookItem);
@@ -69,10 +75,7 @@ myLibrary.forEach((bookItem)=>{
   cards.appendChild(newRow);
 });
 
-// const book1 = new Book("Eragon","Christopher","2004");
-// addBookToLibrary(book1);
 
-// console.log(myLibrary);
 
 
 
